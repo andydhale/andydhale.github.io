@@ -6,6 +6,19 @@ import Link from "next/link";
 //     page: number = 1;
 // }
 
+export async function generateStaticParams() {
+    const posts = getPosts();
+    let pages = Math.ceil(posts.length / 3);
+    let pageCounts = [];
+    for (var i = 1; i <= pages; i++) {
+        pageCounts.push(i);
+    }
+  
+    return pageCounts.map((page) => ({
+      page: page.toString(),
+    }));
+  }
+
 
 export default function BlogIndex({ params }: { params: { page: number  } }) {
     const posts = getPosts(+params.page ?? 1, 3);
