@@ -9,18 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@designbycode/tailwindcss-text-stroke": "^1.2.1",
+    "bootstrap-icons": "^1.11.3",
+    "gray-matter": "^4.0.3",
+    "hastscript": "^9.0.0",
+    "mdast-util-directive": "^3.0.0",
+    "mdast-util-to-hast": "^13.2.0",
+    "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "react-markdown": "^9.0.1",
+    "remark": "^15.0.1",
+    "remark-directive": "^3.0.0",
+    "remark-directive-rehype": "^0.4.2",
+    "remark-html": "^16.0.1",
+    "remark-parse": "^11.0.0",
+    "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "typescript": "^5"
   }
 }
