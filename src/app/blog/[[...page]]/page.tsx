@@ -6,7 +6,7 @@ import Link from "next/link";
 //     page: number = 1;
 // }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
     const posts = getPosts();
     let pages = Math.ceil(posts.length / 3);
     let pageCounts = [];
