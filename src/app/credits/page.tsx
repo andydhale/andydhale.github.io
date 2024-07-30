@@ -1,10 +1,4 @@
-export function CreditItem({text}) {
-    return (
-        <li className="py-2">
-            { text }
-        </li>
-    )
-}
+import { CreditItem } from "../components/CreditItem";
 
 export default function Credits() {
     return (
