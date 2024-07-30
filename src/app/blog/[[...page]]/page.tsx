@@ -21,7 +21,7 @@ export function generateStaticParams() {
   }
 
 
-export default function BlogIndex({ params }: { params: { page?: string  } }) {
+export default function BlogIndex({ params }: { params: { page: string  } }) {
     if (!params.page) {
         params.page = "1";
     }
