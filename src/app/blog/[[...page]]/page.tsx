@@ -10,17 +10,22 @@ export async function generateStaticParams() {
     const posts = getPosts();
     let pages = Math.ceil(posts.length / 3);
     let pageCounts = [];
+    // pageCounts.push("");
     for (var i = 1; i <= pages; i++) {
-        pageCounts.push(i);
+        pageCounts.push(i.toString());
     }
   
     return pageCounts.map((page) => ({
-      page: page.toString(),
+        params: { page: page }
     }));
   }
 
 
-export default function BlogIndex({ params }: { params: { page: number  } }) {
+export default function BlogIndex({ params }: { params: { page?: string  } }) {
+    if (!params.page) {
+        params.page = "1";
+    }
+
     const posts = getPosts(+params.page ?? 1, 3);
 
     const prevPage = +params.page - 1;

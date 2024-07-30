@@ -11,7 +11,7 @@ export default function SiteNavigation() {
                 </Link>
                 <ul className="flex">
                     <li className="mr-8"><Link href="/about" className="text-stroke-[1px] text-stroke-black">About Me</Link></li>
-                    <li className="mr-8"><Link href="/blog/1" className="text-stroke-[1px] text-stroke-black">Blog</Link></li>
+                    <li className="mr-8"><Link href="/blog" className="text-stroke-[1px] text-stroke-black">Blog</Link></li>
                     <li className="mr-8"><Link href="/contact" className="text-stroke-[1px] text-stroke-black">Contact</Link></li>
                 </ul>
             </div>

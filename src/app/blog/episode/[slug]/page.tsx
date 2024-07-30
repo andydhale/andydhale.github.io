@@ -73,7 +73,7 @@ export default async function BlogPage({params}: Params) {
             <ReactMarkdown remarkPlugins={[remarkDirective, remarkDirectiveRehype]} className={`${markdownStyles["markdown"]} ${defaultFont.className}`}>
               {post.content}
             </ReactMarkdown>
-            <Link href="/blog/1" className="mt-24 text-xl">
+            <Link href="/blog" className="mt-24 text-xl">
               Return to Blog
             </Link>
         </article>
