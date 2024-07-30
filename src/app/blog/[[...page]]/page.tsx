@@ -10,14 +10,12 @@ export function generateStaticParams() {
     const posts = getPosts();
     let pages = Math.ceil(posts.length / 3);
     let pageCounts = [];
-    // pageCounts.push("");
+    //pageCounts.push("");
     for (var i = 1; i <= pages; i++) {
         pageCounts.push(i.toString());
     }
   
-    return pageCounts.map((page) => ({
-        params: { page: page }
-    }));
+    return pageCounts.map((page) => ({ page: [page] }));
   }
 
 
