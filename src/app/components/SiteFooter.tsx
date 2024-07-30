@@ -30,8 +30,8 @@ export default function SiteFooter() {
                     <ul className="text-xl text-gray-500">
                         <li className="text-black mb-8"><b>Navigate My Site</b></li>
                         <li className="mb-4"><Link href="/about">About Me</Link></li>
-                        <li className="mb-4"><Link href="/blog">Blog</Link></li>
-                        <li className="mb-4"><Link href="/projects">Projects</Link></li>
+                        <li className="mb-4"><Link href="/blog/1">Blog</Link></li>
+                        {/* <li className="mb-4"><Link href="/projects">Projects</Link></li> */}
                         <li className="mb-4"><Link href="/contact">Contact Me</Link></li>
                         <li className="mb-4"><Link href="/credits">Credits</Link></li>
                     </ul>
