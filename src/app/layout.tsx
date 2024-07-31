@@ -11,22 +11,26 @@ const defaultFont = Permanent_Marker({
   subsets: ["latin"]
 });
 
+const title = "Andy Hale";
+const description = "Hi, I'm Andy, an IT Professional from the UK with a focus on all things automation.";
+const image = "/images/contact_hero.png";
+
 export const metadata: Metadata = {
-  title: "Andy Hale",
-  description: "Hi, I'm Andy, an IT Professional from the UK with a focus on all things automation.",
+  title: title,
+  description: description,
   openGraph: {
     images: [
-      '/images/contact_hero.png'
+      image
     ],
-    title: "Andy Hale",
-    description: "Hi, I'm Andy, an IT Professional from the UK with a focus on all things automation."
+    title: title,
+    description: description
   },
   twitter: {
     images: [
-      '/images/contact_hero.png'
+      image
     ],
-    title: "Andy Hale",
-    description: "Hi, I'm Andy, an IT Professional from the UK with a focus on all things automation."
+    title: title,
+    description: description
   }
 };
 
