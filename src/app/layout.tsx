@@ -12,6 +12,20 @@ const defaultFont = Permanent_Marker({
 export const metadata: Metadata = {
   title: "Andy Hale",
   description: "Hi, I'm Andy, an IT Professional from the UK with a focus on all things automation.",
+  openGraph: {
+    images: [
+      '/images/contact_hero.png'
+    ],
+    title: "Andy Hale",
+    description: "Hi, I'm Andy, an IT Professional from the UK with a focus on all things automation."
+  },
+  twitter: {
+    images: [
+      '/images/contact_hero.png'
+    ],
+    title: "Andy Hale",
+    description: "Hi, I'm Andy, an IT Professional from the UK with a focus on all things automation."
+  }
 };
 
 export default function RootLayout({
