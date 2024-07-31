@@ -37,7 +37,7 @@ export default function BlogIndex({ params }: { params: { page: string  } }) {
     return (
         <main className="p-24">
             <h1 className="text-4xl mb-16">Episodes</h1>
-            <div className="flex mb-16">
+            <div className="flex mb-16 max-sm:flex-col">
                 {
                     posts.map((post => (
                         <BlogComic key={post.slug} post={post} />  

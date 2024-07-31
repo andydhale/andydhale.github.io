@@ -5,7 +5,7 @@ export default function SiteNavigation() {
     return (
         <nav className="w-full h-24 flex px-24 items-center justify-between max-sm:px-12 max-md:px-8 bg-red-600 text-white">
             <div className="flex items-center">
-                <Link href="/" className="max-md:hidden">
+                <Link href="/" className="">
                     <Image src="/images/site_icon.png" width={100} height={100} className="mr-8" alt="AH Logo" />
                     {/* <img src="/images/site_icon.png" className="w-[100px] mr-8"></img> */}
                 </Link>
