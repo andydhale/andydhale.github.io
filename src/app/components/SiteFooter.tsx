@@ -6,7 +6,7 @@ export default function SiteFooter() {
         <footer className="bg-white text-black w-full p-12">
             <div className="flex justify-between max-sm:flex-col">
                 <div className="mr-8">
-                    <h2 className="max-sm:text-2xl text-4xl text-[#FE7E0B] text-stroke-1">Andy Hale</h2>
+                    <Link href="/"><h2 className="max-sm:text-2xl text-4xl text-[#FE7E0B] text-stroke-1">Andy Hale</h2></Link>
                     <p className="text-gray-500 italic text-xl mb-8 max-sm:text-lg">Slightly insane IT Professional</p>
                     <ul className="flex text-3xl text-gray-500">
                         <li className="mr-6">
