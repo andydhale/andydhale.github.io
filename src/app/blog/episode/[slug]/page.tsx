@@ -67,7 +67,7 @@ export default async function BlogPage({params}: Params) {
     const content = await markdownToHtml(post.content || "");
 
     return (
-        <article className="p-24">
+        <article className="p-24 max-sm:px-8 max-sm:py-12">
             <h1 className="text-4xl mb-16">{post.title}</h1>
             {/* <div className={`${markdownStyles["markdown"]} ${defaultFont.className}`} dangerouslySetInnerHTML={{ __html: content }}></div> */}
             <ReactMarkdown remarkPlugins={[remarkDirective, remarkDirectiveRehype]} className={`${markdownStyles["markdown"]} ${defaultFont.className}`}>

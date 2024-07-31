@@ -1,13 +1,12 @@
 import Connect from "./components/Connect";
+import LatestPost from "./components/LatestPost";
 
 export default function Home() {
   return (
     <main className="">
       <img src="/images/comic.png" />
       <img src="/images/page_title.png" className="absolute site-header" />
-      <div>
-        
-      </div>
+      <LatestPost />
       {/* <div className="w-screen overflow-x-hidden">
         <img src="/images/villain_01.png" className="top-[1200px] left-[-200px] absolute transition-all w-[900px]" />
         <img src="/images/villain_02.png" className="top-[1500px] right-0 absolute  transition-all w-[900px]" />
