@@ -35,8 +35,8 @@ export default function BlogIndex({ params }: { params: { page: string  } }) {
     // console.log(`Next Page: ${nextPage}`)
 
     return (
-        <main className="p-24">
-            <h1 className="text-4xl mb-16">Episodes</h1>
+        <main className="p-24 max-sm:px-8 max-sm:py-12">
+            <h1 className="text-4xl max-sm:text-2xl mb-16 max-md:mb-6">Episodes</h1>
             <div className="flex mb-16 max-sm:flex-col">
                 {
                     posts.map((post => (
