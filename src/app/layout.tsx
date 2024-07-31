@@ -4,6 +4,8 @@ import "./globals.css";
 import SiteNavigation from "./components/SiteNavigation";
 import SiteFooter from "./components/SiteFooter";
 
+import { GoogleTagManager } from "@next/third-parties/google";
+
 const defaultFont = Permanent_Marker({
   weight: "400",
   subsets: ["latin"]
@@ -35,6 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-PJ69ZZSX" />
       <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"/>
