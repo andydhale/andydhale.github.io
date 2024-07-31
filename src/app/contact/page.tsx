@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { EMAIL_LINK, GITHUB_LINK, LINKEDIN_LINK } from "../lib/links";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Andy Hale | Contact"
+  };
 
 export default function Contact() {
     return (

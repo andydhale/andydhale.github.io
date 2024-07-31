@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import BioItem from "../components/BioItem";
 import Connect from "../components/Connect";
+
+export const metadata: Metadata = {
+    title: "Andy Hale | About"
+  };
 
 export default function AboutPage() {
     return (

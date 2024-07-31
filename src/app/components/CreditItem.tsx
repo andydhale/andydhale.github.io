@@ -3,7 +3,7 @@ interface ICreditItemProps {
 }
 export function CreditItem({text}: ICreditItemProps) {
     return (
-        <li className="py-2">
+        <li className="py-2 max-sm:ml-4">
             { text }
         </li>
     )

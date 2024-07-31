@@ -1,10 +1,14 @@
 import BlogComic from "@/app/components/BlogComic";
 import { getPosts, getTotalPages } from "../../lib/blogApi"
 import Link from "next/link";
+import { Metadata } from "next";
 
 // interface IBlogIndexRouteParams {
 //     page: number = 1;
 // }
+export const metadata: Metadata = {
+    title: "Andy Hale | Blog"
+  };
 
 export function generateStaticParams() {
     const posts = getPosts();
