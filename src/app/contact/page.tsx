@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <main className="p-24">
             <div className="flex">
-                <div className="w-6/12">
+                <div className="w-6/12 px-8">
                     <h1 className="text-4xl mb-8">Contact Me</h1>
                     <p className="text-lg">Fancy getting in contact with me? Reach out on one of the following channels:</p>
                     <ul className="my-8">
@@ -27,7 +27,7 @@ export default function Contact() {
                         </li>
                     </ul>
                 </div>
-                <div className="w-6/12">
+                <div className="w-6/12 px-8">
                     <Image src="/images/contact_hero.png" width={512} height={512} layout="responsive" alt="About Image" className="border-8 border-gray-800"></Image>
                     {/* <img src="/images/about_hero.jpeg" className="w-full" /> */}
                 </div>

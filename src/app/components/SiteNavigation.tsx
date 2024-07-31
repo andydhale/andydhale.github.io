@@ -3,20 +3,20 @@ import Image from "next/image";
 
 export default function SiteNavigation() {
     return (
-        <nav className="w-full h-24 flex justify-items-center items-center justify-between px-24 bg-red-600 text-white text-2xl">
+        <nav className="w-full h-24 flex px-24 items-center justify-between max-sm:px-12 max-md:px-8 bg-red-600 text-white">
             <div className="flex items-center">
-                <Link href="/">
+                <Link href="/" className="max-md:hidden">
                     <Image src="/images/site_icon.png" width={100} height={100} className="mr-8" alt="AH Logo" />
                     {/* <img src="/images/site_icon.png" className="w-[100px] mr-8"></img> */}
                 </Link>
-                <ul className="flex">
+                <ul className="flex text-2xl max-md:text-lg max-sm:text-md max-md:justify-items-center">
                     <li className="mr-8"><Link href="/about" className="text-stroke-[1px] text-stroke-black">About Me</Link></li>
                     <li className="mr-8"><Link href="/blog" className="text-stroke-[1px] text-stroke-black">Blog</Link></li>
                     <li className="mr-8"><Link href="/contact" className="text-stroke-[1px] text-stroke-black">Contact</Link></li>
                 </ul>
             </div>
 
-            <Link className="text-black px-4 py-2 bg-white" href="/contact">
+            <Link className="text-black px-4 py-2 max-md:hidden bg-white" href="/contact">
                 Connect With Me
             </Link>
             {/* <div className="absolute -top-20 right-10 w-[300px]">
