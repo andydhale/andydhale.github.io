@@ -4,8 +4,8 @@ import LatestPost from "./components/LatestPost";
 export default function Home() {
   return (
     <main className="">
-      <img src="/images/comic.png" />
-      <img src="/images/page_title.png" className="absolute site-header" />
+      <img src="/images/comic.jpg" />
+      {/* <img src="/images/page_title.jpg" className="absolute site-header" /> */}
       <LatestPost />
       {/* <div className="w-screen overflow-x-hidden">
         <img src="/images/villain_01.png" className="top-[1200px] left-[-200px] absolute transition-all w-[900px]" />
@@ -15,7 +15,7 @@ export default function Home() {
         <img src="/images/speech.png" className="absolute" />
         <p className="text-center lg:text-2xl max-md:text-md absolute p-24">“Not many SME business's have someone with Andy's technical ability...”</p>
       </div> */}
-      <img src="/images/page_1.png" />
+      <img src="/images/page_1.jpg" />
       <Connect />
     </main>
   );
