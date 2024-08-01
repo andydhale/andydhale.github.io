@@ -20,8 +20,6 @@
 }
 
 .strip {
-  @apply -mx-24;
   /* @apply w-screen; */
-  padding-left: -6rem;
-  padding-right: -6rem;
+  @apply w-full;
 }

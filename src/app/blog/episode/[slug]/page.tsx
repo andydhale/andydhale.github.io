@@ -70,10 +70,10 @@ export default async function BlogPage({params}: Params) {
         <article className="p-24 max-sm:px-8 max-sm:py-12">
             <h1 className="text-4xl mb-16">{post.title}</h1>
             {/* <div className={`${markdownStyles["markdown"]} ${defaultFont.className}`} dangerouslySetInnerHTML={{ __html: content }}></div> */}
-            <ReactMarkdown remarkPlugins={[remarkDirective, remarkDirectiveRehype]} className={`${markdownStyles["markdown"]} ${defaultFont.className}`}>
+            <ReactMarkdown remarkPlugins={[remarkDirective, remarkDirectiveRehype]} className={`${markdownStyles["markdown"]} ${defaultFont.className} mb-16`}>
               {post.content}
             </ReactMarkdown>
-            <Link href="/blog" className="mt-24 text-xl">
+            <Link href="/blog" className="text-xl border-2 border-gray-500 px-8 py-2 hover:bg-gray-200">
               Return to Blog
             </Link>
         </article>
