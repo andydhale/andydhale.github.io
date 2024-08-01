@@ -13,6 +13,7 @@ import remarkHtml from "remark-html";
 // import * as remarkCustomBlocks from "remark-custom-blocks";
 import remarkDirective from 'remark-directive';
 import remarkDirectiveRehype from "remark-directive-rehype";
+import { readingTime } from "@/app/lib/readingTime";
 
 //const blogFont = M
 const defaultFont = Open_Sans({
@@ -69,6 +70,7 @@ export default async function BlogPage({params}: Params) {
     return (
         <article className="p-24 max-sm:px-8 max-sm:py-12">
             <h1 className="text-4xl mb-16">{post.title}</h1>
+            {/* <p>Reading time: { readingTime(content) }</p> */}
             {/* <div className={`${markdownStyles["markdown"]} ${defaultFont.className}`} dangerouslySetInnerHTML={{ __html: content }}></div> */}
             <ReactMarkdown remarkPlugins={[remarkDirective, remarkDirectiveRehype]} className={`${markdownStyles["markdown"]} ${defaultFont.className} mb-16`}>
               {post.content}
