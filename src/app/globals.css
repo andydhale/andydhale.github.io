@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.site-header {
+  /* opacity: 0; */
+  top:200px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.site-header.enter {
+  opacity: 100;
+}
+
+.strip {
+  /* @apply w-screen; */
+  @apply w-full;
+}

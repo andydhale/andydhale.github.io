@@ -1,0 +1,44 @@
+{
+  "name": "andyhale",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@designbycode/tailwindcss-text-stroke": "^1.2.1",
+    "@next/third-parties": "15.0.3",
+    "bootstrap-icons": "^1.11.3",
+    "gray-matter": "^4.0.3",
+    "hastscript": "^9.0.0",
+    "mdast-util-directive": "^3.0.0",
+    "mdast-util-to-hast": "^13.2.0",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-markdown": "^9.0.1",
+    "remark": "^15.0.1",
+    "remark-directive": "^3.0.0",
+    "remark-directive-rehype": "^0.4.2",
+    "remark-html": "^16.0.1",
+    "remark-parse": "^11.0.0",
+    "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+  }
+}
